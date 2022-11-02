@@ -6,9 +6,9 @@ pipeline {
 				    sh 'mvn clean install'
 				}
 			}
-			stage ("Stage-2"){
+			stage ("deploy"){
 				steps {
-				    echo "Hello World two"
+				    sh'cp /var/lib/jenkins/workspace/Multibranch_book/target/onlinebookstore-0.0.1-SNAPSHOT.war /root/tomcat/webapps/book.sh'
 				}
 			}
 			stage ("Stage-3"){
