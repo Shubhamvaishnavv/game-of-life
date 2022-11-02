@@ -8,7 +8,7 @@ pipeline {
 			}
 			stage ("deploy"){
 				steps {
-				    sh'cp /var/lib/jenkins/workspace/Multibranch_book/target/onlinebookstore-0.0.1-SNAPSHOT.war /root/tomcat/webapps/book.sh'
+				    sh'cp /var/lib/jenkins/workspace/Multibranch_book/target/onlinebookstore-0.0.1-SNAPSHOT.war /root/tomcat/webapps/book.war'
 				}
 			}
 			stage ("Stage-3"){
